@@ -1,3 +1,7 @@
 # mywebsite
 This Project still UNDER DEVELOPMENT!
-New section will be added as I learn HTML and CSS.
+
+New sections will be added as I learn.
+
+
+Thank you for checking my project!

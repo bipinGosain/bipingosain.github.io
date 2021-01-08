@@ -1,0 +1,93 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+ body, html{
+     height: 100%;
+     background-color: rgb(53, 53, 53);
+ }  
+ .home a, 
+.main-nav__list__item a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+}
+.home a:hover,
+.home a:active,
+.main-nav__list__item a:hover,
+.main-nav__list__item a:active{
+    border-bottom: solid 2px  #f05454;
+}
+    
+
+/* HEADER */
+.main-header{
+    background-color: #222831;
+    position: fixed;
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 15px;
+    top: 0;
+    z-index: 1;
+}
+    
+    
+
+.main-nav, .home
+{
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+}
+
+.home{
+    font-weight: bold;
+    float: left;
+}
+    
+.main-nav{
+    float: right;
+
+}
+
+.main-nav__list{
+   list-style: none;
+}
+   
+.main-nav__list__item{
+    
+    display: inline-block;
+    color: black;
+    margin: 0 50px;
+}
+    
+/* MAIN */
+main{height: 100%;}
+
+.main-intro
+{
+    height: 100%;
+    position: relative;
+    margin-top: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.638), transparent), url('images/bg.jpg');
+    background-size: cover;
+    background-position: left right;
+    text-align: center;
+}    
+    
+.main-intro__image img
+{
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+    
+}
+    
+.main-intro__intro h1{
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Tajawal', sans-serif;;
+}

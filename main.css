@@ -72,22 +72,38 @@ main{height: 100%;}
     height: 100%;
     position: relative;
     margin-top: 50px;
-    background: linear-gradient(rgba(0, 0, 0, 0.638), transparent), url('images/bg.jpg');
+    /* background: linear-gradient(rgba(0, 0, 0, 0.802), transparent), url('images/bg.jpg'); */
+    background-color: #f05454;
     background-size: cover;
     background-position: left right;
     text-align: center;
+    font-family: 'Tajawal', sans-serif;
 }    
-    
+ 
+.main-intro__image{
+    margin-top: 50px;
+    padding: 50px;
+}
+
 .main-intro__image img
 {
     border-radius: 50%;
-    width: 100px;
+    width: 150px;
     height: auto;
-    
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
     
+    
 .main-intro__intro h1{
+    font-size: 1rem;
+    color: white;
+}
+.main-intro__intro h2{
     font-size: 1.5rem;
     color: white;
-    font-family: 'Tajawal', sans-serif;;
+}
+    
+.main-intro__intro__name{
+    color: #222831;
+    font-size: 4rem;
 }

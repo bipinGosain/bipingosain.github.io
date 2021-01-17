@@ -5,9 +5,22 @@
     box-sizing: border-box;
     
 }
+
+/* No scroll in safari chrome, opera */
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
  body, html{
      height: 100%;
-     background-color: rgb(53, 53, 53);
+     background-color: #dddddd
  }  
  .home a, 
 .main-nav__list__item a{
@@ -118,6 +131,7 @@ main{height: 100%;}
     text-align: center;
     color: #222831;
     width: 100%;
+    padding-top: 3%;
 }
 .main-intro__long p{
     
@@ -129,8 +143,10 @@ main{height: 100%;}
     padding-top: 30px;
     width: 100%;
 }
-.current-work h2, .tech-stack h2{
+.current-work h1, .tech-stack h1{
     color: rgb(140, 140, 140);
+    font-size: 2rem;
+    
 }    
 .current-work h3{
     
@@ -139,7 +155,6 @@ main{height: 100%;}
 }
 .current-work ol{
     line-height: 1;
-    margin-top: 10px;
     width: 30%;
     display: inline-block;
     text-align: center;
@@ -150,10 +165,9 @@ main{height: 100%;}
  .tech{
 
     display: inline-block;
-    margin: 2% 3%;
-    background-image: linear-gradient(to bottom, #222831 , white);
-    border-radius: 2px;
-    padding: 10px 0;
+    margin: 1% 3%;
+    padding : 1% 0;
+    background-color: #222831;
     box-shadow: 1px 1px 3px 3px #00000075;
     width: 10%;
  }   
@@ -163,7 +177,7 @@ main{height: 100%;}
  }
  .tech h4 a{
     text-decoration: none;
-    color: #222831;
+    color: #dddddd;
 }
 .tech h4 a:hover,
 .tech h4 a:active{
@@ -172,12 +186,133 @@ main{height: 100%;}
 
 /* Main projects */
 .main-project{
-    background-color: #f05454;
     color: white;
     font-family: 'Tajawal', sans-serif;
-}
-.main-project__showcase{
-    padding: 5% 0;
-    text-align: center;
+    position: relative;
+    margin: 10% 0;
+    height: 100%;
+    width: 100%;
 }
 
+
+.main-project__bg{
+    background-image: url('../images/portfolio_bg.jpg');
+    background-position: center;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+}
+.main-project__content h1{font-size: 2rem;}
+
+.main-project__content{
+    position: absolute;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+}
+.project{
+    background-color: rgba(255, 255, 255, 0.227);
+    padding: 2%;
+    display: inline-block;
+    margin: 3%;
+    width: 15%;
+    line-height: 1;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.project a{
+    text-decoration: none;
+    color: #dddddd;
+}
+
+.project img{
+    width: 80%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+/* Main Contacts */
+
+.main-contact{
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+    height: 42%;
+    width: 100%;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.main-contact__bg{
+    
+    background-image: url('../images/contact.jpg');
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+}
+.main-contact__content h1{font-size: 2rem;}
+.main-contact__controls{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: #222831;
+    height: 100%;
+
+}
+    
+.main-contact__controls div{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 2%;
+}
+textarea{
+    width: 29%;
+    padding: 10px;
+    border: none;
+}
+input
+{
+    width: 14%;
+    padding: 10px;
+    border: none;
+    margin: 10px 0px;
+ }
+ 
+input:focus,
+textarea:focus
+{
+    outline: none !important;
+    border:1px solid rgb(87, 87, 87);
+}
+button{
+    width: 10%;
+    padding: 13px 2px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #f05454;
+    color: whitesmoke;
+    border: none;
+    margin: 10px 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+    
+.container{
+    padding: 10px;
+    font-size: 1.2rem;
+}
+    
+footer{
+    text-align: left;
+    background-color: #222831;
+    color: white;padding: 10px 0;
+}
+    

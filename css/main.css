@@ -305,8 +305,22 @@ footer{
 }
 footer h3{
     display: inline-block;
-    font-size: 1rem;
     margin-right: 5%;
+    margin-left: 1%;
+    font-weight: lighter;
+    font-size: .7rem;
+    
+}
+footer h3 i{
+    margin-right: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover
+{
+    border-bottom: .2px solid #f05454;
 }
     
 

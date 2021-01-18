@@ -42,7 +42,7 @@ body {
     position: fixed;
     width: 100%;
     font-size: 1.3rem;
-    padding: 15px;
+    padding: 5px;
     top: 0;
     z-index: 1;
     font-family: 'Balsamiq Sans', cursive;
@@ -80,12 +80,10 @@ body {
 }
     
 /* ========MAIN================= */
-main{height: 100%;}
 
 .main-intro
 {
     height: 100%;
-    position: relative;
     background-color: #f05454;
     background-size: cover;
     text-align: center;
@@ -93,8 +91,8 @@ main{height: 100%;}
 }    
  /* main intro short */
 .main-intro__short{
-    position: relative;
     height: 50%;
+    padding: 3% 0px;
 }
 
 
@@ -104,7 +102,7 @@ main{height: 100%;}
     width: 150px;
     height: auto;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
-    margin-top: 100px;
+    margin-top: 30px;
 }
     
     
@@ -127,7 +125,6 @@ main{height: 100%;}
 .main-intro__long{
     height: 50%;
     background-color: #dddddd;
-    position: relative;
     text-align: center;
     color: #222831;
     width: 100%;
@@ -183,33 +180,21 @@ main{height: 100%;}
 .tech h4 a:active{
     border-bottom: 2px solid #f05454;
 }
-
+ 
 /* Main projects */
 .main-project{
     color: white;
     font-family: 'Tajawal', sans-serif;
-    position: relative;
-    margin: 10% 0;
-    height: 100%;
-    width: 100%;
+    margin: 5% 0;
+    background-color: #f05454;
 }
+  
 
 
-.main-project__bg{
-    background-image: url('../images/portfolio_bg.jpg');
-    background-position: center;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    display: inline-block;
-}
+
 .main-project__content h1{font-size: 2rem;}
 
 .main-project__content{
-    position: absolute;
     color: white;
     display: inline-block;
     width: 100%;
@@ -217,10 +202,10 @@ main{height: 100%;}
     padding-top: 3%;
 }
 .project{
-    background-color: rgba(255, 255, 255, 0.227);
+    background-color: #22283144;
     padding: 2%;
     display: inline-block;
-    margin: 3%;
+    margin: 2%;
     width: 15%;
     line-height: 1;
     border-radius: 5px;
@@ -238,6 +223,7 @@ main{height: 100%;}
     margin-bottom: 30px;
 }
 
+
 /* Main Contacts */
 
 .main-contact{
@@ -246,7 +232,7 @@ main{height: 100%;}
     height: 42%;
     width: 100%;
     position: relative;
-    margin-bottom: 3%;
+    margin: 2% 0;
 }
 
 .main-contact__bg{
@@ -255,34 +241,35 @@ main{height: 100%;}
     background-position: top;
     background-size: cover;
     width: 100%;
+    height: 100%;
     display: inline-block;
     position: absolute;
-    height: 100%;
+    z-index: -1;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
-.main-contact__content h1{font-size: 2rem;}
+.main-contact__content h1{
+    font-size: 2rem;
+    
+}
 .main-contact__controls{
-    position: absolute;
     text-align: center;
     width: 100%;
-    color: #ffffff;
     height: 100%;
-
+    display: inline-block;
 }
     
-.main-contact__controls div{
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 2%;
-}
+
 textarea{
-    width: 29%;
+    width: 28%;
     padding: 10px;
-    border: none;
+    border: solid 1px #f05454;
 }
 input
 {
     width: 14%;
     padding: 10px;
-    border: none;
+    border: solid 1px #f05454;
     margin: 10px 0px;
  }
  
@@ -290,11 +277,10 @@ input:focus,
 textarea:focus
 {
     outline: none !important;
-    border:1px solid rgb(87, 87, 87);
 }
 button{
-    width: 10%;
-    padding: 13px 2px;
+    width: 7%;
+    padding: 5px 2px;
     text-align: center;
     border-radius: 2px;
     background-color: #f05454;
@@ -306,13 +292,14 @@ button{
 }
     
 .container{
-    padding: 10px;
     font-size: 1.2rem;
+    color: #222831;
 }
     
 footer{
-    text-align: left;
-    background-color: #222831;
-    color: white;padding: 10px 0;
+    text-align: center;
+    background-color: #14181d;
+    color: white;
+    padding: 5px;
 }
     

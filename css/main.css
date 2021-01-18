@@ -187,6 +187,7 @@ body {
     font-family: 'Tajawal', sans-serif;
     margin: 5% 0;
     background-color: #f05454;
+    text-align: center;
 }
   
 
@@ -197,7 +198,7 @@ body {
 .main-project__content{
     color: white;
     display: inline-block;
-    width: 100%;
+    width: 85%;
     text-align: center;
     padding-top: 3%;
 }
@@ -297,9 +298,16 @@ button{
 }
     
 footer{
-    text-align: center;
+    text-align: left;
     background-color: #14181d;
     color: white;
-    padding: 5px;
+    padding: 2px;
 }
+footer h3{
+    display: inline-block;
+    font-size: 1rem;
+    margin-right: 5%;
+}
+    
+
     

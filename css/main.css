@@ -1,8 +1,45 @@
-/* GENERAL */
+
+/* ========MAIN================= */
+
+.main-intro
+{
+    background-color: #f05454;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+    margin: 2.6rem 0;
+}    
+ /* main intro short */
+.main-intro__short{
+}
+
+
+.main-intro__short img
+{
+    border-radius: 50%;
+    width: 150px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+    
+    
+.main-intro__intro h1{
+    color: white;
+}
+.main-intro__intro div{
+    line-height: 0.9;
+    color: white;
+    margin: 0 30%;
+    font-size: .6rem;
+}
+
+    
+.main-intro__intro__name{
+    color: #222831;
+    font-size: 4rem;
+}
 
 /* main intro long */
 .main-intro__long{
-    height: 50%;
     background-color: #dddddd;
     text-align: center;
     color: #222831;

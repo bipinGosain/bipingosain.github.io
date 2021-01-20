@@ -18,21 +18,20 @@ body {
 
 
  body, html{
-     height: 100%;
      background-color: #dddddd
  }  
- .home a, 
-.main-nav__list__item a{
-    text-decoration: none;
-    color: white;
-    padding-bottom: 5px;
+ .home{
+    font-weight: bold;
+    float: left;
+    height: 2rem;
 }
-.home a:hover,
-.home a:active,
-.main-nav__list__item a:hover,
-.main-nav__list__item a:active{
-    border-bottom: solid 1px  #f05454;
+.main-nav, .home
+{
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
 }
+
     
 
 /* HEADER */
@@ -49,22 +48,15 @@ body {
 }
     
     
-
-.main-nav, .home
-{
-    vertical-align: middle;
-    display: inline-block;
-    position: relative;
+/* Bar */
+.menu{
+    margin: 0;
+    background-color: #222831;
+    padding: 0;
+    display: none;
 }
-
-.home{
-    font-weight: bold;
-    float: left;
-}
-    
 .main-nav{
     float: right;
-
 }
 
 .main-nav__list{
@@ -75,48 +67,34 @@ body {
     
     display: inline-block;
     color: black;
-    margin: 0 50px;
-}
-    
-/* ========MAIN================= */
-
-.main-intro
-{
-    height: 100%;
-    background-color: #f05454;
-    background-size: cover;
-    text-align: center;
-    font-family: 'Tajawal', sans-serif;
-}    
- /* main intro short */
-.main-intro__short{
-    height: 50%;
-    padding: 3% 0px;
+    margin: 0 30px;
 }
 
-
-.main-intro__short img
-{
-    border-radius: 50%;
-    width: 150px;
-    height: auto;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
-    margin-top: 30px;
-}
-    
-    
-.main-intro__intro h1{
+.home a, 
+.main-nav__list__item a{
+    text-decoration: none;
     color: white;
+    padding-bottom: 5px;
 }
-.main-intro__intro div{
-    line-height: 0.9;
-    color: white;
-    margin: 0 30%;
-    font-size: .6rem;
+.home a:hover,
+.home a:active,
+.main-nav__list__item a:hover,
+.main-nav__list__item a:active{
+    border-bottom: solid 1px  #f05454;
 }
 
-    
-.main-intro__intro__name{
-    color: #222831;
-    font-size: 4rem;
+/* MEDIA QUERIES NAV BAR */
+
+@media (max-width: 37.5rem){
+    .menu{
+        display: inline-block;
+    }
+    .home-link{
+        display: none;
+    }
+
+    .main-nav{
+        display: none;
+    }
+
 }

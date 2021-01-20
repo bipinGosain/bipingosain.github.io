@@ -8,7 +8,6 @@ function listenToCSSEvents(){
     //TECH EVENTS
     document.querySelectorAll('.tech-img').forEach(
         x=> x.addEventListener('mouseover', (eve)=>{
-            console.log('here');
             eve.target.classList.add('jello-horizontal');
         })
     )

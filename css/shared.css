@@ -23,7 +23,7 @@ body {
  .home{
     font-weight: bold;
     float: left;
-    height: 2rem;
+    
 }
 .main-nav, .home
 {
@@ -32,14 +32,12 @@ body {
     position: relative;
 }
 
-    
-
 /* HEADER */
 .main-header{
     background-color: #222831;
     position: fixed;
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 5px;
     top: 0;
     z-index: 1;
@@ -74,7 +72,6 @@ body {
 .main-nav__list__item a{
     text-decoration: none;
     color: white;
-    padding-bottom: 5px;
 }
 .home a:hover,
 .home a:active,
@@ -82,6 +79,46 @@ body {
 .main-nav__list__item a:active{
     border-bottom: solid 1px  #f05454;
 }
+
+
+
+.show{
+    display: block !important;
+}
+
+
+    
+.nav-burger{
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background-color: #22283198;
+    width: 80%;
+    height: 100vh;
+    text-align: left;
+}
+
+.nav-burger__list{
+    list-style: none;
+    
+}
+.nav-burger__list__item{
+    padding: 3% 3%;
+    margin: 2% 0;
+    background-color: #222831;
+}
+ 
+ .nav-burger__list__item a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
 
 /* MEDIA QUERIES NAV BAR */
 

@@ -14,7 +14,10 @@ window.onload =  ()=>{
     listenToNavEvents();
     
     fetchNews().then((result)=>{
-        console.log(result);
+        if(result.status === 'error'){
+            alert(`News API does not work in free plan on Github.`);
+            window.history.back();
+        }
         modal.style.display = 'none';
         //spawning list of headlines on the page... 
         totalHeadlines = result.articles.length;

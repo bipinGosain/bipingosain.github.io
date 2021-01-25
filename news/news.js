@@ -14,7 +14,7 @@ window.onload =  ()=>{
     listenToNavEvents();
     
     fetchNews().then((result)=>{
-        
+        console.log(result);
         modal.style.display = 'none';
         //spawning list of headlines on the page... 
         totalHeadlines = result.articles.length;

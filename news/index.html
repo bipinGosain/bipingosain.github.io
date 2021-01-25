@@ -6,12 +6,14 @@
     <title>Read News</title>
     <!-- MY STYLESHEETS -->
     <link rel="stylesheet" href="../css/shared.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="./news.css">
 
     <script src="https://kit.fontawesome.com/b0dc454d76.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
+
+    
     <header class="main-header">
         <div class="home">
             <a href="../index.html" class="home-link"><i class="fas fa-home"></i></a>
@@ -39,12 +41,7 @@
         </nav>
     </header>
     <nav class="nav-burger">
-
-       
-        <i id="back-btn" class="fas fa-arrow-left" style="color: #f05454;font-size: 2rem;padding: 11px;position: fixed;right: 100px;bottom: 0px;"></i>
-       
-
-
+         <i id="back-btn" class="fas fa-arrow-left" style="color: #f05454;font-size: 2rem;padding: 11px;position: fixed;right: 100px;bottom: 0px;"></i>
         <ul class="nav-burger__list">
             <li class="nav-burger__list__item">
                 <a href="../index.html#intro" class="nav-burger__list__item__a">I AM</a> 
@@ -60,9 +57,23 @@
                 <a href="index.html" target="__blank">NEWS</a>
             </li>
         </ul>
+       
+
+
     </nav>
 
-<script src="./main.js"></script>
-<script src="/shared.js"></script>
+    <div class="loader">
+        <h1>LOADING NEWS...</h1>
+    </div>
+        
+    <main>
+        <div class="headlines-parent">
+            <button class="headlines-parent__left" id="left"><i class="fas fa-caret-right"></i></button>
+            <button class="headlines-parent__right" id="right"><i class="fas fa-caret-right"></i></button>
+        </div>
+    </main>
+
+<script src="./news.js"></script>
+<script src="../shared.js"></script>
 </body>
 </html>

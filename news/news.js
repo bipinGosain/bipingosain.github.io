@@ -1,5 +1,5 @@
 let api = '4f2f28d5773044d9a4dc1a1cfb6a130f';
-let url = 'http://newsapi.org/v2/top-headlines?' +
+let url = 'https://newsapi.org/v2/top-headlines?' +
           'country=in&' +
           `apiKey=${api}`;
 

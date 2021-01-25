@@ -17,7 +17,10 @@ window.onload =  ()=>{
         if(result.status === 'error'){
             alert(`News API does not work in free plan on Github.`);
             window.history.back();
+            return;
         }
+
+
         modal.style.display = 'none';
         //spawning list of headlines on the page... 
         totalHeadlines = result.articles.length;

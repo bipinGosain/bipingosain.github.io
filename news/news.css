@@ -36,7 +36,7 @@ html, body{
 .article{
     display: none;
     background-color: #16191f;
-    padding: 1%;
+    padding: 1rem;
     text-align: center;
 }
 .show{
@@ -46,7 +46,7 @@ html, body{
 .article-img{
     width: 50%;
     opacity: 0;
-    height: 18rem;
+    height: 15rem;
     width: auto;
 }
 .show-article-img{
@@ -59,9 +59,9 @@ html, body{
     color: white;
 }
 .article-heading{
-    padding: 2rem 0;
+    padding: 1rem 0;
     font-style: italic;
-    height: 5rem;
+    height: 4rem;
 }
 
 .headlines-parent__left, 
@@ -73,6 +73,7 @@ html, body{
     color: white;
     top: 50%;
     outline: none;
+    padding: .3rem;
 }
     
 
@@ -102,3 +103,74 @@ html, body{
 }
 
     
+.category-news__categories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+
+}
+.category-news__category{
+    padding: 1rem 2rem;
+    margin: 1rem 1rem;
+    background-color: #f05454;
+    color: white;
+}
+
+.category-news__category:hover,
+.category-news__category:active{
+    background-color: #a83a3a;
+    font-weight: bolder;
+    transform: scale(1.05);
+    transition: transform .5s;
+}
+
+.selected{
+    background-color: #a83a3a;  
+}
+.category-news__container{
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.category-news__container h2{
+    padding: 8rem;
+    color: black;
+    font-weight: bolder;
+}
+.category-news__article{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin: 1rem;
+    background-color: #222831;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+}
+.category-news__link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.category-news__img{
+    width: auto;
+    height: 10rem;
+    
+}
+.category-news__img:hover, 
+.category-news__img:active{
+    transform: scale(1.1);
+    transition: transform .2s ease-in;
+}
+.category-news__heading{
+    width: 15rem;
+    height: auto;
+    margin: 1rem 0 0 0 ;
+}
+

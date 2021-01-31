@@ -24,7 +24,7 @@ window.onload =  ()=>{
     //Get Headlines.... 
     fetchNews(headLinesURL).then((result)=>{
         if(result.status === 'error'){
-            alert(`News API does not work in free plan on Github.`);
+            alert(`News API does not work in Production on a Free Plan.`);
             window.history.back();
             return;
         }
